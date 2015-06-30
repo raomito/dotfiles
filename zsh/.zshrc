@@ -76,8 +76,8 @@ bindkey '^p' history-beginning-search-backward-end
 bindkey '^n' history-beginning-search-forward-end
 
 # コマンド補完を強化
-if [ -e "$HOME/.zsh-completions" ]; then
-  fpath=($HOME/.zsh-completions $fpath)
+if [ "$(uname)" = "Darwin" ]; then
+  fpath=($HOME/.homebrew/share/zsh-completions $fpath)
 fi
 
 # ============================================================================
