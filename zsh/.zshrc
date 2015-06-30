@@ -61,6 +61,9 @@ add-zsh-hook chpwd chpwd_recent_dirs
 # ディレクトリ移動履歴の保存数
 zstyle ':chpwd:*' recent-dirs-max 100
 
+# ディレクトリ移動履歴の保存先
+zstyle ':chpwd:*' recent-dirs-file "$HOME/.chpwd_history"
+
 # ホームディレクトリを項目から除外
 zstyle ':chpwd:*' recent-dirs-prune parent
 
