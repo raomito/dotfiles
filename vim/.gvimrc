@@ -29,7 +29,7 @@ if has('win32') || has('win64')
   set guifont=Ricty_for_Powerline:h14:cSHIFTJIS
 elseif has('mac')
   " Mac
-  set guifont=Ricty_for_Powerline:h18
+  set guifont=Ricty:h18
 else
   " Linux
   set guifont=Ricty\ for\ Powerline\ 12
