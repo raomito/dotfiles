@@ -109,8 +109,8 @@ colors
 setopt prompt_subst
 
 function make_prompt() {
-  left=$'\n'%F{magenta}'%n'%F{none}' at '%F{green}'%m'%F{none}' in '%F{yellow}'%~'%F{none}
-  right=%F{cyan}'%D{%y/%m/%d %H:%M:%S}'$'\n'%F{56}'❯❯ '%F{none}
+  left=$'\n'%F{red}'%n'%F{none}' at '%F{green}'%m'%F{none}' in '%F{yellow}'%~'%F{none}
+  right=%F{cyan}'%D{%y/%m/%d %H:%M:%S}'$'\n'%F{56}'> '%F{none}
   lcols="$(print -P '%n at %m in %~')"
   rcols="$(print -P '%D{%y/%m/%d %H:%M:%S}')"
   mcols="$(( $COLUMNS - ${#lcols} - ${#rcols} ))"
@@ -124,7 +124,7 @@ function make_prompt() {
 }
 
 PROMPT='$(make_prompt)'
-PROMPT2=%F{56}' ❯ '%F{none}
+PROMPT2=%F{56}'> '%F{none}
 
 # ============================================================================
 # Window Title
