@@ -102,12 +102,15 @@ set virtualedit=block
 " ============================================================================
 " Display:
 
-" ターミナル指定
-set term=xterm-256color
+" ターミナルマルチプレクサを起動している場合
+if &term =~ '^screen'
+  set t_ts=]0;
+  set t_fs=
+endif
 
 " ウィンドウタイトル表示
-set title
 let &titlestring = 'Thanks for flying Vim'
+set title
 
 " 行番号を表示
 set number
