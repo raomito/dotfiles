@@ -250,6 +250,7 @@ NeoBundleLazy 'vim-jp/cpp-vim', {
 \   'filetypes': ['cpp']
 \ }
 \}
+NeoBundle 'vim-jp/vimdoc-ja'
 NeoBundleLazy 'vim-ruby/vim-ruby', {
 \ 'autoload': {
 \   'filetypes': ['ruby']
