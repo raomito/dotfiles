@@ -44,12 +44,12 @@ hi SpecialComment     cterm=NONE      ctermfg=56       ctermbg=NONE      gui=NON
 hi Debug              cterm=NONE      ctermfg=253      ctermbg=NONE      gui=NONE      guifg=#DADADA      guibg=NONE
 hi Underlined         cterm=underline ctermfg=44       ctermbg=NONE      gui=underline guifg=#00D7D7      guibg=NONE
 hi Ignore             cterm=NONE      ctermfg=242      ctermbg=NONE      gui=NONE      guifg=#6C6C6C      guibg=NONE
-hi Error              cterm=NONE      ctermfg=NONE     ctermbg=124       gui=NONE      guifg=NONE         guibg=#AF0000
+hi Error              cterm=NONE      ctermfg=NONE     ctermbg=125       gui=NONE      guifg=NONE         guibg=#AF005F
 hi Todo               cterm=NONE      ctermfg=184      ctermbg=NONE      gui=NONE      guifg=#D7D700      guibg=NONE
 hi ColorColumn        cterm=NONE      ctermfg=NONE     ctermbg=56        gui=NONE      guifg=NONE         guibg=#5F00D7
 hi Conceal            cterm=NONE      ctermfg=NONE     ctermbg=NONE      gui=NONE      guifg=NONE         guibg=NONE
 hi Cursor             cterm=NONE      ctermfg=232      ctermbg=253       gui=NONE      guifg=#080808      guibg=#DADADA
-hi CursorIM           cterm=NONE      ctermfg=NONE     ctermbg=124       gui=NONE      guifg=NONE         guibg=#AF0000
+hi CursorIM           cterm=NONE      ctermfg=NONE     ctermbg=125       gui=NONE      guifg=NONE         guibg=#AF005F
 hi CursorColumn       cterm=NONE      ctermfg=NONE     ctermbg=NONE      gui=NONE      guifg=NONE         guibg=NONE
 hi CursorLine         cterm=NONE      ctermfg=NONE     ctermbg=232       gui=NONE      guifg=NONE         guibg=#080808
 hi Directory          cterm=NONE      ctermfg=40       ctermbg=NONE      gui=NONE      guifg=#00D700      guibg=NONE
@@ -57,7 +57,7 @@ hi DiffAdd            cterm=NONE      ctermfg=NONE     ctermbg=NONE      gui=NON
 hi DiffChange         cterm=NONE      ctermfg=NONE     ctermbg=NONE      gui=NONE      guifg=NONE         guibg=NONE
 hi DiffDelete         cterm=NONE      ctermfg=NONE     ctermbg=NONE      gui=NONE      guifg=NONE         guibg=NONE
 hi DiffText           cterm=NONE      ctermfg=NONE     ctermbg=NONE      gui=NONE      guifg=NONE         guibg=NONE
-hi ErrorMsg           cterm=NONE      ctermfg=NONE     ctermbg=124       gui=NONE      guifg=NONE         guibg=#AF0000
+hi ErrorMsg           cterm=NONE      ctermfg=NONE     ctermbg=125       gui=NONE      guifg=NONE         guibg=#AF005F
 hi VertSplit          cterm=NONE      ctermfg=NONE     ctermbg=NONE      gui=NONE      guifg=NONE         guibg=NONE
 hi Folded             cterm=NONE      ctermfg=44       ctermbg=235       gui=NONE      guifg=#00D7D7      guibg=#262626
 hi FoldColumn         cterm=NONE      ctermfg=NONE     ctermbg=234       gui=NONE      guifg=NONE         guibg=#1C1C1C
@@ -85,7 +85,7 @@ hi StatusLine         cterm=NONE      ctermfg=253      ctermbg=235       gui=NON
 hi StatusLineNC       cterm=NONE      ctermfg=242      ctermbg=235       gui=NONE      guifg=#6C6C6C      guibg=#262626
 hi TabLine            cterm=NONE      ctermfg=253      ctermbg=242       gui=NONE      guifg=#DADADA      guibg=#6C6C6C
 hi TabLineFill        cterm=NONE      ctermfg=NONE     ctermbg=234       gui=NONE      guifg=NONE         guibg=#1C1C1C
-hi TabLineSel         cterm=NONE      ctermfg=253      ctermbg=166       gui=NONE      guifg=#DADADA      guibg=#D75F00
+hi TabLineSel         cterm=NONE      ctermfg=253      ctermbg=130       gui=NONE      guifg=#DADADA      guibg=#AF5F00
 hi Title              cterm=NONE      ctermfg=166      ctermbg=NONE      gui=NONE      guifg=#D75F00      guibg=NONE
 hi Visual             cterm=NONE      ctermfg=NONE     ctermbg=236       gui=NONE      guifg=NONE         guibg=#303030
 hi VisualNOS          cterm=NONE      ctermfg=NONE     ctermbg=236       gui=NONE      guifg=NONE         guibg=#303030
