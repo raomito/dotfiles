@@ -186,6 +186,11 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 " commands       => コマンドが入力されたら読み込む
 " filetypes      => ファイル形式が一致したら読み込む
 
+NeoBundleLazy 'elzr/vim-json', {
+\ 'autoload': {
+\   'filetypes': ['json']
+\  }
+\}
 NeoBundleLazy 'glidenote/memolist.vim', {
 \ 'autoload': {
 \   'commands': ['MemoNew', 'MemoList']
