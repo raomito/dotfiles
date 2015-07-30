@@ -708,6 +708,9 @@ autocmd MyAutoCmd Filetype html,yaml
 autocmd MyAutoCmd Filetype javascript,json
 \ setlocal softtabstop=2 shiftwidth=2
 
+" ダブルクォートを常に表示
+let g:vim_json_syntax_conceal = 0
+
 " Ruby
 " --------------------------------------
 autocmd MyAutoCmd Filetype ruby
