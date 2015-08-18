@@ -109,6 +109,7 @@ colors
 setopt prompt_subst
 
 function make_prompt() {
+  local left lcols middle mcols right rcols
   left=$'\n'%F{red}'%n'%F{none}' at '%F{green}'%m'%F{none}' in '%F{yellow}'%~'%F{none}
   right=%F{cyan}'%D{%y/%m/%d %H:%M:%S}'$'\n'%F{56}'> '%F{none}
   lcols="$(print -P '%n at %m in %~')"
