@@ -125,7 +125,7 @@ set laststatus=2
 set showtabline=2
 
 " コマンドラインの高さ
-set cmdheight=2
+" set cmdheight=2
 
 " ポップアップメニューに表示される項目数
 set pumheight=10
