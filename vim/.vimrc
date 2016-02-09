@@ -189,7 +189,7 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleLazy 'elzr/vim-json', {
 \ 'autoload': {
 \   'filetypes': ['json']
-\  }
+\ }
 \}
 NeoBundleLazy 'glidenote/memolist.vim', {
 \ 'autoload': {
@@ -201,7 +201,7 @@ NeoBundle 'jelera/vim-javascript-syntax'
 NeoBundleLazy 'mattn/emmet-vim', {
 \ 'autoload': {
 \   'filetypes': ['html']
-\  }
+\ }
 \}
 NeoBundleLazy 'raomito/unite-memolist', {
 \ 'autoload': {
@@ -246,7 +246,7 @@ NeoBundleLazy 'thinca/vim-ref', {
 NeoBundleLazy 'tpope/vim-rails', {
 \ 'autoload': {
 \   'filetypes': ['ruby']
-\  }
+\ }
 \}
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'tpope/vim-surround'
