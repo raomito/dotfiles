@@ -198,6 +198,11 @@ NeoBundleLazy 'glidenote/memolist.vim', {
 \}
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'jelera/vim-javascript-syntax'
+NeoBundleLazy 'justmao945/vim-clang', {
+\ 'autoload': {
+\   'filetypes': ['c', 'cpp']
+\ }
+\}
 NeoBundleLazy 'mattn/emmet-vim', {
 \ 'autoload': {
 \   'filetypes': ['html']
