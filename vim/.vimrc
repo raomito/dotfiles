@@ -250,11 +250,6 @@ NeoBundleLazy 'tpope/vim-rails', {
 \}
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'tpope/vim-surround'
-NeoBundleLazy 'vim-jp/cpp-vim', {
-\ 'autoload': {
-\   'filetypes': ['cpp']
-\ }
-\}
 NeoBundle 'vim-jp/vimdoc-ja'
 NeoBundleLazy 'vim-ruby/vim-ruby', {
 \ 'autoload': {
