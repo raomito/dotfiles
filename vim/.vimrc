@@ -268,6 +268,16 @@ call neobundle#end()
 filetype plugin indent on
 
 " ============================================================================
+" Clang:
+
+" 自動起動
+let g:clang_auto = 0
+
+" 補完候補表示
+let g:clang_c_completeopt = 'menuone'
+let g:clang_cpp_completeopt = 'menuone'
+
+" ============================================================================
 " Emmet:
 
 " 展開キー変更
@@ -421,6 +431,17 @@ let g:neocomplete#keyword_patterns['default'] = '\h\w*'
 let g:neocomplete#sources#dictionary#dictionaries = {
 \ 'ruby': expand('~/.vim/dict/ruby.dict'),
 \}
+
+" オムニ補完の文脈を定義
+if !exists('g:neocomplete#force_omni_input_patterns')
+  let g:neocomplete#force_omni_input_patterns = {}
+endif
+
+" 文脈の追加
+let g:neocomplete#force_omni_input_patterns.c =
+\ '[^.[:digit:] *\t]\%(\.\|->\)\w*'
+let g:neocomplete#force_omni_input_patterns.cpp =
+\ '[^.[:digit:] *\t]\%(\.\|->\)\w*\|\h\w*::\w*'
 
 " 補完候補のページ移動
 inoremap <expr><C-f>  pumvisible() ? "\<PageDown>" : "\<Right>"
