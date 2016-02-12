@@ -183,51 +183,38 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 
 " NeoBundleFetch => neobundle.vim自体をneobundle.vimで管理する
 " NeoBundleLazy  => プラグインの遅延読み込み
-" commands       => コマンドが入力されたら読み込む
-" filetypes      => ファイル形式が一致したら読み込む
+" on_cmd         => コマンドが入力されたら読み込む
+" on_ft          => ファイル形式が一致したら読み込む
 
-NeoBundleLazy 'elzr/vim-json', {
-\ 'autoload': {
-\   'filetypes': ['json']
-\ }
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+NeoBundle 'elzr/vim-json', {
+\ 'on_ft': 'json'
 \}
-NeoBundleLazy 'glidenote/memolist.vim', {
-\ 'autoload': {
-\   'commands': ['MemoNew', 'MemoList']
-\ }
+NeoBundle 'glidenote/memolist.vim', {
+\ 'on_cmd': ['MemoNew', 'MemoList']
 \}
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'jelera/vim-javascript-syntax'
-NeoBundleLazy 'justmao945/vim-clang', {
-\ 'autoload': {
-\   'filetypes': ['c', 'cpp']
-\ }
+NeoBundle 'justmao945/vim-clang', {
+\ 'on_ft': ['c', 'cpp']
 \}
-NeoBundleLazy 'mattn/emmet-vim', {
-\ 'autoload': {
-\   'filetypes': ['html']
-\ }
+NeoBundle 'mattn/emmet-vim', {
+\ 'on_ft': 'html'
 \}
-NeoBundleLazy 'raomito/unite-memolist', {
-\ 'autoload': {
-\   'unite_sources': 'memolist',
-\ }
+NeoBundle 'raomito/unite-memolist', {
+\ 'on_unite': 'memolist',
 \}
-NeoBundleLazy 'scrooloose/syntastic', {
-\ 'autoload': {
-\   'commands': ['SyntasticCheck']
-\ }
+NeoBundle 'scrooloose/syntastic', {
+\ 'on_cmd': 'SyntasticCheck'
 \}
-NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'Shougo/neosnippet.vim'
 NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'Shougo/unite.vim'
-NeoBundleLazy 'Shougo/vimfiler.vim', {
-\ 'autoload': {
-\   'commands': ['VimFiler', 'VimFilerExplorer']
-\ }
+NeoBundle 'Shougo/vimfiler.vim', {
+\ 'on_cmd': ['VimFiler', 'VimFilerExplorer']
 \}
 NeoBundle 'Shougo/vimproc.vim', {
 \ 'build': {
@@ -236,30 +223,22 @@ NeoBundle 'Shougo/vimproc.vim', {
 \   'cygwin': 'make -f make_cygwin.mak',
 \ }
 \}
-NeoBundleLazy 'Shougo/vimshell.vim', {
-\ 'autoload': {
-\   'commands': ['VimShell']
-\ }
+NeoBundle 'Shougo/vimshell.vim', {
+\ 'on_cmd': 'VimShell'
 \}
 NeoBundle 'thinca/vim-quickrun'
-NeoBundleLazy 'thinca/vim-ref', {
-\ 'autoload': {
-\   'commands': ['Ref'],
-\   'filetypes': ['ruby']
-\ }
+NeoBundle 'thinca/vim-ref', {
+\ 'on_cmd': 'Ref',
+\ 'on_ft': 'ruby'
 \}
-NeoBundleLazy 'tpope/vim-rails', {
-\ 'autoload': {
-\   'filetypes': ['ruby']
-\ }
+NeoBundle 'tpope/vim-rails', {
+\ 'on_ft': 'ruby'
 \}
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'vim-jp/vimdoc-ja'
-NeoBundleLazy 'vim-ruby/vim-ruby', {
-\ 'autoload': {
-\   'filetypes': ['ruby']
-\ }
+NeoBundle 'vim-ruby/vim-ruby', {
+\ 'on_ft': 'ruby'
 \}
 NeoBundle 'vim-scripts/Align'
 NeoBundle 'Yggdroot/indentLine'
