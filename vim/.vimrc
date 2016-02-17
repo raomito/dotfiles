@@ -379,8 +379,13 @@ let g:memolist_path = expand('~/dropbox/memo')
 let g:memolist_prompt_categories = 1
 let g:memolist_prompt_tags = 1
 
+" メモ一覧にUniteを使用
+let g:memolist_unite = 1
+let g:memolist_unite_source = 'file_rec'
+
 " 起動
 nnoremap <silent> <Space>mn :<C-u>MemoNew<CR>
+nnoremap <silent> <Space>ml :<C-u>MemoList<CR>
 
 " ============================================================================
 " Neocomplete:
