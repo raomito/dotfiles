@@ -202,9 +202,6 @@ NeoBundle 'justmao945/vim-clang', {
 NeoBundle 'mattn/emmet-vim', {
 \ 'on_ft': 'html'
 \}
-NeoBundle 'raomito/unite-memolist', {
-\ 'on_unite': 'memolist',
-\}
 NeoBundle 'scrooloose/syntastic', {
 \ 'on_cmd': 'SyntasticCheck'
 \}
@@ -384,7 +381,6 @@ let g:memolist_prompt_tags = 1
 
 " 起動
 nnoremap <silent> <Space>mn :<C-u>MemoNew<CR>
-nnoremap <silent> <Space>ml :<C-u>Unite memolist<CR>
 
 " ============================================================================
 " Neocomplete:
@@ -523,9 +519,6 @@ let g:unite_data_directory = expand('~/.vim/cache/unite')
 
 " delete <C-d>アクションでファイルを削除する
 call unite#custom#alias('file', 'delete', 'vimfiler__delete')
-
-" :Unite memolistした際のファイルの順番を作成日時順にする
-call unite#custom_source('memolist', 'sorters', 'sorter_memolist_date')
 
 " バッファ一覧
 nnoremap <silent> <Space>fb :<C-u>Unite buffer<CR>
