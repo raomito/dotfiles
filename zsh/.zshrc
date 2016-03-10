@@ -108,7 +108,7 @@ colors
 # PROMPT内で変数参照を行う
 setopt prompt_subst
 
-PROMPT='$(make_prompt)'
+PROMPT='$(prompt)'
 PROMPT2=%F{56}'> '%F{none}
 
 # ============================================================================
