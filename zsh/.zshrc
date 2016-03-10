@@ -108,22 +108,6 @@ colors
 # PROMPT内で変数参照を行う
 setopt prompt_subst
 
-function make_prompt() {
-  local left lcols middle mcols right rcols
-  left=$'\n'%F{red}'%n'%F{none}' at '%F{green}'%m'%F{none}' in '%F{yellow}'%~'%F{none}
-  right=%F{cyan}'%D{%y/%m/%d %H:%M:%S}'$'\n'%F{56}'> '%F{none}
-  lcols="$(print -P '%n at %m in %~')"
-  rcols="$(print -P '%D{%y/%m/%d %H:%M:%S}')"
-  mcols="$(( $COLUMNS - ${#lcols} - ${#rcols} ))"
-
-  for i in {1..$mcols}
-  do
-    middle+=' '
-  done
-
-  echo "${left}${middle}${right}"
-}
-
 PROMPT='$(make_prompt)'
 PROMPT2=%F{56}'> '%F{none}
 
