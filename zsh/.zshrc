@@ -32,7 +32,7 @@ stty susp undef
 # History
 
 # コマンド履歴の保存先
-HISTFILE="$HOME/.zsh_history"
+HISTFILE="${HOME}/.zsh_history"
 
 # メモリに展開する履歴の件数
 HISTSIZE=10000
@@ -62,7 +62,7 @@ add-zsh-hook chpwd chpwd_recent_dirs
 zstyle ':chpwd:*' recent-dirs-max 100
 
 # ディレクトリ移動履歴の保存先
-zstyle ':chpwd:*' recent-dirs-file "$HOME/.chpwd_history"
+zstyle ':chpwd:*' recent-dirs-file "${HOME}/.chpwd_history"
 
 # ホームディレクトリを項目から除外
 zstyle ':chpwd:*' recent-dirs-prune parent
@@ -77,7 +77,7 @@ bindkey '^n' history-beginning-search-forward-end
 
 # コマンド補完を強化
 if [ "$(uname)" = "Darwin" ]; then
-  fpath=($HOME/.homebrew/share/zsh-completions $fpath)
+  fpath=(${HOME}/.homebrew/share/zsh-completions ${fpath})
 fi
 
 # ============================================================================
@@ -96,7 +96,7 @@ alias la='ls -a'
 alias ll='ls -l'
 alias lp='ls -al | peco'
 alias rm='rm -i'
-alias sudo='sudo env PATH=$PATH'
+alias sudo='sudo env PATH=${PATH}'
 
 # ============================================================================
 # Prompt
@@ -114,8 +114,8 @@ PROMPT2=%F{56}'> '%F{none}
 # ============================================================================
 # Window Title
 
-if [ "$TERM" = "screen-256color" ] || [ "$TERM" = "xterm-256color" ]; then
-  precmd() { echo -n "\e]0;${USER}@${HOST%%.*}:${PWD/#$HOME/~}\a" }
+if [ "${TERM}" = "screen-256color" ] || [ "${TERM}" = "xterm-256color" ]; then
+  precmd() { echo -n "\e]0;${USER}@${HOST%%.*}:${PWD/#${HOME}/~}\a" }
 fi
 
 # ============================================================================
@@ -124,16 +124,16 @@ fi
 # ============================================================================
 # Ruby
 
-if [ -d "$HOME/.rbenv" ]; then
-  export PATH="$HOME/.rbenv/bin:$PATH"
+if [ -d "${HOME}/.rbenv" ]; then
+  export PATH="${HOME}/.rbenv/bin:${PATH}"
   eval "$(rbenv init -)"
 fi
 
 # ============================================================================
 # PHP
 
-if [ -d "$HOME/.phpenv" ]; then
-  export PATH="$HOME/.phpenv/bin:$PATH"
+if [ -d "${HOME}/.phpenv" ]; then
+  export PATH="${HOME}/.phpenv/bin:${PATH}"
   eval "$(phpenv init -)"
 fi
 
