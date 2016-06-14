@@ -10,7 +10,7 @@ typeset -U PATH
 export EDITOR=vim
 export LANG=ja_JP.UTF-8
 export PAGER=less
-export PATH="$HOME/app/bin:$HOME/bin:$HOME/.rbenv/shims:$HOME/.homebrew/bin:$HOME/.npm:$PATH"
+export PATH="$HOME/.local/bin:$HOME/.rbenv/shims:$HOME/.npm:$PATH"
 export SHELL=/bin/zsh
 
 # TUI表示の修正
